@@ -1,10 +1,29 @@
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
-  <title>Cooking App</title>
+  <title>Cooking Converter</title>
+  <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+  <link href="css/styles.css" rel="stylesheet" type="text/css">
+  <script src="js/jquery-3.5.1.js"></script>
+  <script src="js/scripts.js"></script>
 </head>
 <body>
-  <h1>Cooking App</h1>
-  <script src="js/scripts.js"></script>
+  <div class="container">
+    <h1>Cooking Converter</h1>
+    <div class="row">
+      <div class="col-3">
+        <form id="galToLit">
+        <div class="form-group">
+          <label for="gallons">How many gallons:</label>
+          <input id="gallons" class="form-control" type="text">
+        </div>
+        <button type="submit" class="btn">Convert to liters!</button>
+        </form>
+        <div id="outputLiters">
+
+        </div>
+      </div>
+    </div>
+  </div>
 </body>
 </html>
